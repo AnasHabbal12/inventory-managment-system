@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>IMS Login - Inventory Management System</title>
+        <link rel="stylesheet" type="text/css" href="css/IMS.css"/>
+        <script src="https://use.fontawesome.com/0c7a3095b5.js"></script>
+    </head>
+    <body id="dashboard">
+        <div id="dashboardMainContainer">
+            <div class="dashboardSidebar" id="dashboardSidebar">
+                <h3 class="dashboardLogo" id="dashboardLogo">IMS</h3>
+                <div class="dashboardSidebarUser">
+                    <img alt="User Image." src="Images/Users/will.jpg" id="userImage"/>
+                    <span>Gomez</span>
+                </div>
+                <div class="dashboardSidebarMenus">
+                    <ul class="dashboardMenuLists">
+                        <li class="menuActive">
+                            <a href="javascript:void(0);" ><i class="fa fa-dashboard menuIcons"></i><span class="menuText"> Dashboard</span></a>
+                        </li>
+                        <li >
+                            <a href="" ><i class="fa fa-dashboard menuIcons"></i><span class="menuText"> Dashboard</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dashboardContentContainer">
+                <div class="dashboardTopNav">
+                    <a href="" id="toggleButton"> <i class="fa fa-navicon"></i></a>
+                    <a href="" id="logoutButton"> <i class="fa fa-power-off"></i>Log Out</a>
+                </div>
+                <div class="dashboardContent">
+                    <div class="dashboardContentMain">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var sidebarIsOpen = true;
+        var i;
+        menuIcon = document.getElementsByClassName('menuText');
+        toggleButton.addEventListener( 'click', (event) => {
+            event.preventDefault();
+            if(sidebarIsOpen)
+            {
+                dashboardSidebar.style.width = '10%';
+                dashboardSidebar.style.transition = '.5s all';
+                dashboardMainContainer.style.width = '90%';
+                dashboardLogo.style.fontSize = '60';
+                dashboardLogo.style.width = '60'; 
+                for(i=0; i< menuIcon.length; i++)
+                {
+                    menuIcon[i].style.display = 'none';
+                }
+                document.getElementsByClassName('dashboardMenuLists')[0].style.textAlign = 'center';
+                sidebarIsOpen = false;
+            }
+            else
+            {
+                dashboardSidebar.style.width = '20%';
+                dashboardMainContainer.style.width = '80%';
+                dashboardLogo.style.fontSize = '80';
+                dashboardLogo.style.width = '80'; 
+                for(i=0; i< menuIcon.length; i++)
+                {
+                    menuIcon[i].style.display = 'inline-block';
+                }
+                document.getElementsByClassName('dashboardMenuLists')[0].style.textAlign = 'left';
+                sidebarIsOpen = true;
+            }
+        });
+    </script>
+</html>

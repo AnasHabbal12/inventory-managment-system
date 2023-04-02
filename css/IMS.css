@@ -1,0 +1,735 @@
+﻿*,*::before,*::after{box-sizing:border-box}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}ul[role="list"],ol[role="list"]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}input,button,textarea,select{font:inherit}@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+#loginBody
+{
+    background: url(../Images/LoginBackground.jpg) no-repeat;
+    background-size: cover;
+   
+}
+body
+{
+    font-family: arial;
+}
+
+div.loginHeader
+{
+    text-align: center;
+    margin-bottom: 60px;
+}
+div.loginHeader h1
+{
+    font-size: 100px;
+    font-weight: bold;
+    color: #f685a2;
+    padding: 0px;
+    margin: 0px;
+    
+}
+div.loginHeader p
+{
+    color: #ffdae3;
+    font-size: 50px;
+    margin: 0px;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+div.loginHeader p:after
+{
+    content: "";
+    display: block;
+    height: 5px;
+    background: #f685a2;
+    width: 50%;
+    margin: 0 auto;
+}
+div.loginBody form
+{
+    margin: 0 auto;
+    width: 450px;
+    background: rgba(0,0,0,.5);
+    padding: 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+div.loginBody form:hover
+{
+   border: 3px solid #fff;
+   transition: .1s all; 
+}
+div.loginInputContainer
+{
+    margin-top: 30px;
+   
+}
+div.loginInputContainer label
+{
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+div.loginInputContainer input
+{
+    height: 30px;
+    width: 100%;
+    border: 0px;
+    background: rgba(0,0,0,.5);
+    border-bottom: 2px solid #d40339;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+div.loginButtomContainer
+{
+     margin-top: 40px;
+    text-align: center;
+    
+}
+div.loginButtomContainer button
+{
+    font-size: 20px;
+    padding: 10px 40px;
+    background: #f685a2;
+    border: 2px #5f5f5f ;
+    color: #fff;
+    border-radius: 10px;
+}
+div.loginInputContainer input:hover
+{
+   border-bottom: 3px solid #f685a2 ;
+   transition: .1s all;
+}
+div.loginButtomContainer button:hover
+{
+    background: #d40339;
+    border: 2px #5f5f5f ;
+    transition: .5s all;
+}
+div.header
+{
+   width: 100%;
+   height: 30px;
+   background: #f685a1;
+   padding: 5px;
+   padding-bottom: 30px;
+   position: fixed;
+   top: 0px;
+}
+div.header a
+{
+   margin-left:10px ;
+   margin-top:10px;
+   padding: 4px;
+   background-color: #d40339;
+   color: #d4d4d4;
+   text-decoration: none;
+   width: 50px;
+   border: 2px solid #5f5f5f;
+   border-radius: 5px;
+}
+div.header a:hover
+{
+   border: 3px solid #d4d4d4;
+   opacity: 0.3;
+   border-radius: 5px;
+   transition: .3s all;
+}
+div.banner
+{
+   background: url('../Images/homeBackground.jpg') no-repeat center center fixed;
+   background-size: cover;
+   padding-bottom: 100px;
+   padding-top: 100px;
+   height: 80vh;
+   
+}
+div.homepageContainer
+{
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   
+}
+div.bannerHeader h1
+{
+   font-size: 40px;
+   
+   color: #f685a1;
+   line-height: 100%;
+}
+div.bannerHeader p
+{
+   font-size: 40px;
+   color: #f685a1;
+   text-transform: uppercase;
+   line-height: 100%;
+   
+}
+p.bannerTagline
+{
+   font-size: 25px;
+   margin-top: 20px;
+   color: #fff;
+}
+div.bannerIcons
+{
+   margin-top: 50px;
+}
+div.bannerIcons a
+{
+   font-size: 25px;
+   margin-left: 40px;
+   padding: 7px 15px;
+   background: rgba(0,0,0,.5);
+   color: #868485;
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   border-radius: 50%;
+}
+div.bannerIcons a:first-child
+{
+   margin-left: 0px;
+}
+div.bannerIcons a:hover
+{
+   color: #fff;
+   font-size: 25px;
+   background: #f685a1;
+   transition: .5s all;
+   width: 60px;
+   height: 60px;
+}
+div.homepageFeatures
+{
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   padding-left: 10%;
+}
+div.homepageFeature
+{
+   padding: 10px 20px;
+   width: 30%;
+   
+}
+div.homepageFeature span.featureIcon
+{
+   height: 80px;
+   width: 80px;
+   display: inline-block;font-size: 50px;
+   background: #f685a1;
+   color: #fff;
+   padding-left: 7px;
+   padding-top: 5px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+div.homepageFeature h3.featureTitle
+{
+   margin-bottom: 20px;
+}
+div.homepageFeature:hover
+{
+   background: rgba(0,0,0,.1);
+   transition: 0.5s;
+   border-top-right-radius: 5%;
+   border-top-left-radius: 5%;
+   border-bottom: 1px solid #f685a1 ;
+   cursor: pointer;
+   
+}
+div.homepageFeature p.featureDescription
+{
+   color: #848484;
+}
+div.homepageNotified
+{
+   background: #e3e3e3;
+   padding: 50px 0px;
+   
+}
+div.homepageNotifiedContainer
+{
+   display: flex;
+   flex-direction: row;
+}
+div.homepageNotifiedContainer > div
+{
+   width: 50%;
+}
+div.emailForm
+{
+   width: 40%;
+}
+div.video
+{
+   width: 60%;
+   
+}
+div.homepageNotified h3
+{
+   margin-bottom: 20px;
+}
+div.homepageNotified p
+{
+   color: #848484;
+   line-height: 150%;
+   margin-bottom: 30px;
+}
+div.formContainer
+{
+   width: 80%;
+   position: relative;
+   
+}
+div.formContainer input
+{
+   width: 100%;
+   padding: 15px 10px;
+   border: none;
+   border-radius: 10px;
+}
+div.formContainer input:focus
+{
+   outline: none;
+}
+div.formContainer button
+{
+   position: absolute;
+   right: 0;
+   top: 0;
+   height: 100%;
+   font-size: 22px;
+   padding: 0px 10px;
+   background: #f685a1;
+   border: none;
+   color: #fff;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+iframe
+{
+   width: 100%;
+   height: 120%;
+}
+div.socials
+{
+   text-align: center;
+   padding: 70px 0 40px 0px;
+}
+p.socialText
+{
+   margin-bottom: 25px;
+   margin-top: 20px;
+   color: #848484;
+   font-size: 20px;
+}
+h3.socialHeader
+{
+   font-size: 30px;
+}
+div.socialIconContainer a
+{
+   font-size: 20px;
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   background: #d4d4d4;
+   padding-top: 9px;
+   border-radius: 50%;
+   color: #fff;
+   margin-left: 20px;
+}
+div.socialIconContainer a:hover
+{
+   background: #f8a4b9;
+   transition: 0.5s all;
+   cursor: pointer;
+}
+div.footer
+{
+   background: #e3e3e3;
+   padding-bottom: 80px;
+   padding-top: 80px;
+   text-align: center;
+}
+div.footer a
+{
+   color: #848484;
+   margin-left: 30px;
+   text-decoration: none;
+}
+div.footer a:hover
+{
+   color: #d4d4d4;
+   cursor: pointer;
+   transition: 0.5s all;
+}
+#dashboardMainContainer
+{
+   display: flex;
+   flex-direction: row;
+}
+div.dashboardSidebar
+{
+   width: 20%;
+   background: #323232;
+   
+}
+#dashboardContentContainer
+{
+   width: 80%;
+   background: #f4f6f9;
+}
+h3.dashboardLogo
+{
+   color: #f685a1;
+   font-size: 80px;
+   text-align: center;
+}
+div.dashboardSidebarUser
+{
+   text-align: center;
+   position: relative;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #fff;
+}
+div.dashboardSidebarUser img
+{
+   width: 60px;
+   display: inline-block;
+   border-radius: 50%;
+   border: 2px solid #f685a1;
+   margin-right: 5px;
+   vertical-align: middle;
+}
+div.dashboardSidebarUser span
+{
+   top: 20%;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #fff;
+   display: inline-block;
+}
+
+ul.dashboardMenuLists
+{
+   list-style: none;  
+   margin-top: 20px;
+   margin-left: 0px;
+   padding-left: 0px;
+}
+ul.dashboardMenuLists li
+{
+   
+   padding: 15px 15px;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+ul.dashboardMenuLists li a
+{
+   text-decoration: none;
+   color: #fff;
+   display: block;
+   font-size: 20px;
+}
+ul.dashboardMenuLists li a i
+{
+   font-size: 25px;
+}
+ul.dashboardMenuLists li a.menuActive
+{
+   text-decoration: none;
+   color: #fff;
+}
+ul.dashboardMenuLists li:hover
+{
+   background: #f685a1;
+   color: #fff;
+   transition: 2.5s all;
+}
+div.dashboardTopNav
+{
+   background: #fff;
+   padding: 20px;
+}
+div.dashboardTopNav a
+{
+   color: #848383;
+   font-size: 20px;
+}
+a#logoutButton
+{
+   float: right;
+}
+div.dashboardContent
+{
+   padding: 50px 10px 10px 10px;
+   background: #f4f6f9;
+}
+div.dashboardContentMain
+{
+   background: #fff;
+   height: 100%;
+   padding-bottom: 30px;
+}
+div#eMessage
+{
+   background: #fff;
+   text-align: center;
+   color: red;
+   font-size: 20px;
+   padding: 11px;
+}
+form.appForm
+{
+   width: 50%;
+   margin: 0 auto;
+   padding: 10px;
+   border: 1px solid #cecfd0;
+   border-radius: 5px;
+   background: #f4f6f9;
+   opacity: 0.9;
+}
+form.appForm:hover
+{
+   background: #d8d8df;
+   border: 2px solid #909192;
+   opacity: 1;
+}
+form::after
+{
+  content: '';
+  clear: both;
+  display: block;
+}
+form label
+{
+   text-transform: uppercase;
+   font-weight: bold;
+}
+select.appFormInput
+{
+   width: 100%;
+   height: 33px;
+   border: 1px solid #cecfd0;
+   border-radius: 5px;
+   padding-bottom: 0px;
+   text-align: center;
+}
+input.appFormInput
+{
+   width: 100%;
+   height: 33px;
+   border: 1px solid #cecfd0;
+   border-radius: 5px;
+}
+div.dashboardContentMain form
+{
+  margin-bottom: 15px;
+}
+div.userAddFormContainer
+{
+   padding-top: 50px;
+}
+
+button.appBtn
+{
+   background: #f685a1;  
+   color: #fff;
+   padding: 10px;
+   margin-top: 20px;
+   float: right;
+   border: 2px solid #c2c0c0;
+   border-radius: 10px;
+}
+button.appBtn:hover
+{
+   border: 3px solid #525252;
+   background: #d40339;
+}
+p.responseMessage
+{
+   font-size: 18px;
+   text-align: center;
+   margin-top: 33px;
+   background: rgba(0 , 128,0 ,0.1);
+   padding: 20px;
+}
+p.responseMessage__success
+{
+   background: rgba(0 , 128,0 ,0.1);
+}
+p.responseMessage__error
+{
+   background: rgba(0 , 128,0 ,0.1);
+}
+div.row
+{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+}
+div.colum
+{
+   width: 100%;
+   padding: 0px 10px;
+}
+div.column-5
+{
+   width: 41.67%;
+}
+div.column-7
+{
+   width: 58.33%;
+   display: block;
+}
+h1.sectionHeader
+{
+   font-size: 21px;
+   color: #f685a1;
+   border-bottom: 1px solid #ffd7e1;
+   padding-bottom: 11px;
+   padding: 10px;
+   border-left: 4px solid #f690bf;
+   margin-bottom: 15px;
+   margin-left: 15px;
+}
+table
+{
+   width: 100%;
+   
+}
+table, th, td 
+{
+   border: 1px solid #cacaca;
+   border-collapse: collapse;
+   font-size: 15px;
+}
+table th
+{
+   font-size: 12px;
+   text-transform: uppercase;
+   background: #f4f6f9;
+   text-align: center;
+}
+table td
+{
+   font-size: 13px;
+   text-align: center;
+   padding: 5px;
+}
+p.userCount
+{
+   text-align: right;
+   font-size: 15px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #f685a1;
+   padding-top: 15px;
+}
+div.dashboardContentMain
+{
+ display: flex;
+ flex-direction: row;
+ 
+}
+div.zzz
+{
+   display:grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   padding: 20px;
+   width: 100%;   
+}
+div.products
+{
+   width: 200px;
+   min-width: 200px;
+   height: 210px;
+   min-height: 210px;
+   padding: 20px;
+   border-bottom: 1px solid #525252;
+   text-align: center;
+   margin-left: 30px;
+   
+   
+}
+div.products:hover
+{
+   border-bottom: 0px;
+   background: rgba(0,0,0,.1);
+   border-radius: 15px;
+   transition: .5s;
+   width: 205px;
+   min-width: 205px;
+   height: 205px;
+   min-height: 205px;
+   padding: 24px;
+}
+div.products img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 17%;
+}
+div.products h3
+{
+   font-size: 16px;
+   font-weight: bold;
+   color: #f685a1;
+   text-decoration: none;
+   
+}
+div.products p
+{ 
+   font-size: 14px;
+   font-weight: bold;
+   color: #848484;
+   text-decoration: none;
+}
+div.products a
+{
+   text-decoration: none;
+}
+div.prodAddFormContainer
+{
+   width: 100%;
+   padding-top: 50px;
+}
+div.orders{
+   display: inline-block;
+   width: 90%;
+   margin: 20px;
+   padding: 10px;
+   border: 1px solid;
+   margin: 47px auto;
+   padding: 10px;
+   border: 1px solid #cecfd0;
+   border-radius: 5px;
+   background: #f4f6f9;
+   opacity: 0.9;
+}
+div.orders:hover{
+   background: #d8d8df;
+   border: 2px solid #909192;
+   opacity: 1;
+}
+div.col7div{
+   padding-left: 30px;
+}
+
+#saveBtn{
+   margin-right: 120px;
+}
+i.menuIcons span.menuText{
+   padding-left: 10px;
+}
+div.orderTable{
+   padding-left: 30px;
+}
